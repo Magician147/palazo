@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting to another page...</title>
+    <script>
+        window.onload = function() {
+            var url = window.location.hash.substring(1);
+            window.location.href = atob(url);
+        };
+    </script>
+</head>
+<body>
+    <p>Please wait while you are redirected to another page...</p>
+</body>
+</html>
