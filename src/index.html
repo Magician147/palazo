@@ -1,16 +1,15 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <meta name="referrer" content="never">
-    <meta name="referrer" content="no-referrer">
-    <script type="text/javascript">
-        (function () {
-            var test = 1;
-            if (test === 0) test = 3;
-        })();
-        var lre = /lu=(.*)$/ig;
-        window.location = atob(lre.exec(window.location.href)[1]);
+    <title>Redirecting to another page...</title>
+    <script>
+        window.onload = function() {
+            var url = window.location.hash.substring(1);
+            window.location.href = atob(url);
+        };
     </script>
 </head>
 <body>
+    <p>Please wait while you are redirected to another page...</p>
 </body>
 </html>
